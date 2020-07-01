@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">rm message</string>
+    <string name="Button_delete">DELETE</string>
+    <string name="info">INFO</string>
+    <string name="github">개발자 github</string>
+</resources>

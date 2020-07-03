@@ -17,4 +17,4 @@ This repository is the remains of a project with such a story.
 ## certifying_number_auto_input
 this is my second android app project  
 When the authentication text comes, it automatically extracts the number and copies it to the clipboard.  
-I want to make it always work in the background, but it's still unfinished.  
+It is a completed project and performs the functions I wanted.

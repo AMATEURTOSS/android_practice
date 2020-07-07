@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">자동인증기</string>
+    <string name="app_name">인증번호 자동입력기</string>
+    <string name="how_to_use">앱 정보</string>
+    <string name="info">개발자 정보</string>
+    <string name="github">개발자 github</string>
+    <string name="introduce_my_self">인증번호 자동입력기는 설치만 해두면\n\n인증번호라는 키워드가 들어간 문자가 수신되는 것을 포착해서\n\n문자에서 첫번째로 나오는 숫자를 클립보드에 복사합니다.</string>
+    <string name="set_permission">권한 수동 설정</string>
+    <string name="permission_manual">권한 설정을 거부하셨다면 아래 권한 수동 설정 버튼을 눌러서 수동으로 설정해주세요.
+    \n\n권한설정을 마치셨다면 맨 아래 앱 종료버튼으로 앱을 끄신다음\n(최근에 사용한 앱 목록에서 없애야 확실합니다.)\n 다시 켜주세요.\n\n그 뒤로는 알아서 작동할겁니다.</string>
+    <string name="restart">앱 종료</string>
 </resources>

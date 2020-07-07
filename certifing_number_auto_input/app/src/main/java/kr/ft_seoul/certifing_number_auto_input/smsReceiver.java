@@ -34,18 +34,35 @@ public class smsReceiver extends BroadcastReceiver
 			String message = smsMessage[0].getMessageBody().toString();
 			Log.d(TAG, message);
 			if (message.contains("인증번호") || message.contains("인증 번호"))
+			{
 				ret = manage_str(message);
-			Log.d(TAG, "certifying_num: " + ret);
-			ClipboardManager clipboard = (ClipboardManager)context.getSystemService(Context.CLIPBOARD_SERVICE);
-			ClipData clip = ClipData.newPlainText("인증번호", ret);
-			clipboard.setPrimaryClip(clip);
-			Toast.makeText(context, "인증번호가 복사되었습니다.", Toast.LENGTH_LONG).show();
+				Log.d(TAG, "certifying_num: " + ret);
+				ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+				ClipData clip = ClipData.newPlainText("인증번호", ret);
+				clipboard.setPrimaryClip(clip);
+				Toast.makeText(context, "인증번호가 복사되었습니다.", Toast.LENGTH_LONG).show();
+			}
 		}
 	}
 
-	private String manage_str(String message)
+	private static String manage_str(String message)
 	{
-		String ret = message.replaceAll("[^0-9]", "");
-		return (ret);
+		int start = -1;
+		int end = -1;
+		char tmp;
+		String ret = "";
+		for (int i = 0; i < message.length(); i++)
+		{
+			tmp = message.charAt(i);
+			if (!(start == -1) && !(tmp >= '0' && tmp <= '9'))
+			{
+				end = i;
+				ret = message.substring(start, end);
+				return (ret);
+			}
+			if (start == -1 && tmp >= '0' && tmp <= '9')
+				start = i;
+		}
+		return (null);
 	}
 }

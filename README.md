@@ -14,7 +14,7 @@ https://stackoverflow.com/a/8851644/3020568
 Unfortunately, I didn't know until the project was finished that deleting messages is not a security policy.  
 This repository is the remains of a project with such a story.  
 
-## certifying_number_auto_input
+## automatically_enter_authentication_number
 this is my second android app project  
 When the authentication text comes, it automatically extracts the number and copies it to the clipboard.  
 It is a completed project and performs the functions I wanted.

@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "certifing_number_auto_input"

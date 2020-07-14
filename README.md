@@ -17,4 +17,5 @@ This repository is the remains of a project with such a story.
 ## automatically_enter_authentication_number
 this is my second android app project  
 When the authentication text comes, it automatically extracts the number and copies it to the clipboard.  
-It is a completed project and performs the functions I wanted.
+It is a completed project and performs the functions I wanted.  
+https://drive.google.com/file/d/1JwYjpvWrXY0VSpO6NnVnoJfle4Kf_g7Y/view?usp=sharing  

@@ -18,4 +18,7 @@ This repository is the remains of a project with such a story.
 this is my second android app project  
 When the authentication text comes, it automatically extracts the number and copies it to the clipboard.  
 It is a completed project and performs the functions I wanted.  
+
 https://drive.google.com/file/d/1JwYjpvWrXY0VSpO6NnVnoJfle4Kf_g7Y/view?usp=sharing  
+
+I want to add this app in google play store, but it failed because of policy violation

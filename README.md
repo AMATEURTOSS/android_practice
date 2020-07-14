@@ -2,7 +2,7 @@
  
 This store contains two apps.  
 * rm_message
-* certifying_number_auto_input
+* automatically_enter_authentication_number
 
 ## rm_message
 This is my first android app project  

@@ -11,7 +11,7 @@ This app deletes all SMS ad texts.
 
 https://stackoverflow.com/a/8851644/3020568
 
-Unfortunately, I didn't know that clearing the message until the end of the project would violate our security policy.  
+Unfortunately, I didn't know that clearing the message would violate security policy.  
 This repository is the remains of a project with such a story.  
 
 ## automatically_enter_authentication_number

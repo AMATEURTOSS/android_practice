@@ -37,10 +37,15 @@ public class smsReceiver extends BroadcastReceiver
             {
                 ret = manage_str(message);
                 Log.d(TAG, "certifying_num: " + ret);
-                ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-                ClipData clip = ClipData.newPlainText("인증번호", ret);
-                clipboard.setPrimaryClip(clip);
-                Toast.makeText(context, "인증번호가 복사되었습니다.", Toast.LENGTH_LONG).show();
+                if (ret != null)
+                {
+                    ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                    ClipData clip = ClipData.newPlainText("인증번호", ret);
+                    clipboard.setPrimaryClip(clip);
+                    Toast.makeText(context, "인증번호가 복사되었습니다.", Toast.LENGTH_LONG).show();
+                }
+                if (ret == null)
+                    Toast.makeText(context, "인증번호 복사 실패.", Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -58,7 +63,14 @@ public class smsReceiver extends BroadcastReceiver
             {
                 end = i;
                 ret = message.substring(start, end);
-                return (ret);
+                if (ret.length() < 4)
+                {
+                    start = -1;
+                    end = -1;
+                    ret = null;
+                }
+                else
+                    return (ret);
             }
             if (start == -1 && tmp >= '0' && tmp <= '9')
                 start = i;
@@ -66,4 +78,3 @@ public class smsReceiver extends BroadcastReceiver
         return (null);
     }
 }
-
